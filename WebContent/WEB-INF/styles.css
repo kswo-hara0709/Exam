@@ -1,0 +1,79 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<div class="header">
+<head>
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style >
+
+	.header h1,span,ul{
+	display: inline-block;
+	}
+	.header li{
+	 text-align: right;
+	}
+	</style>
+	<h1>得点管理システム</h1>
+	<span>様</span>
+	<ul>
+		<li><a href="studentlist.jsp">ログアウト</a></li>
+	</ul>
+
+</head>
+</div>
+<div class="sidebar">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	        html, body {
+	            height: 100%;
+	            margin: 0;
+	            font-family: Arial, sans-serif;
+	        }
+	        body {
+	            display: flex;
+	            flex-direction: column;
+	        }
+	        .container {
+	            display: flex;
+	            flex: 1;
+	        }
+	        .sidebar {
+	            width: 15%;
+	            border-right: 2px solid #000;
+	            padding: 10px;
+	            box-sizing: border-box;
+	        }
+	        .main {
+	            width: 85%;
+	            padding: 10px;
+	            box-sizing: border-box;
+	        }
+	        .sidebar h1 {
+	            font-size: 1.5em;
+	            margin-top: 0;
+	        }
+	        .sidebar ul {
+	            list-style-type: none;
+	            padding: 0;
+	        }
+	        .sidebar li {
+	            margin: 5px 0;
+	        }
+	        .sidebar a {
+	            text-decoration: underline;
+	        }
+	</style>
+</head>
+
+	<ul>
+		<li><a href="studentlist.jsp">学生一覧</a></li>
+		<br>
+        <li><a href="addStudent.jsp">学生追加</a></li>
+        <br>
+        <li><a href="updatestudent.jsp">学生更新</a></li>
+        <br>
+        <li><a href="deleteStudent.jsp">学生削除</a></li>
+	</ul>
+</div>

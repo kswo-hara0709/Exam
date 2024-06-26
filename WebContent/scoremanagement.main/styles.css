@@ -1,0 +1,63 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    background-color: rgba(169, 169, 169, 0.5); /* 透明な鼠色 */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px; /* パディングを増やしてボタンを横長にする */
+    background-color: #d3d3d3; /* ボタンの背景を薄い鼠色に */
+    color: white; /* ボタンの文字色を白に */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block; /* インラインブロック要素として表示 */
+    transform: rotate(0deg); /* テキストを横向きにするために回転をリセット */
+}
+
+button:hover {
+    background-color: #bbb; /* ホバー時の背景色 */
+}
+
+/* ボタンのテキストを横向きにする */
+button span {
+    display: block;
+    transform: rotate(90deg); /* テキストを90度回転して横向きにする */
+    white-space: nowrap; /* テキストが折り返さないように */
+    transform-origin: center; /* 回転の中心を設定 */
+}
